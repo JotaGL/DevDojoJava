@@ -1,14 +1,26 @@
 package academy.devdojo.maratonajava.introducao;
 
-public class Aula06EstruturasDeRepeticao02 {
-    // Imprima os primeiros 25 numeros de um dado valor. Por exemplo, 50.
+public class Aula06EstruturasDeRepeticao01{
     public static void main(String[] args) {
-        int valorMax = 50;
-        for (int i = 0; i <= valorMax; i++) {
-            if (i>25) {
-                break; //Precisa estar dentro de um Switch ou Loop
-            }
-            System.out.println(i);
+        // While, Do While, For
+        int count = 0;
+        while (count < 10) {
+            System.out.println(count); // Or: System.out.println(++count) [Excluindo o metodo abaixo]
+            count = count + 1; // Or: count++ | cout += 1
+        }
+        count = 0;
+        do {
+            System.out.println("Dentro do Do-While"+count); // Or: System.out.println("Dentro do Do-While"+ ++count);
+            count++;
+        } while (count < 10); // Trocar o valor por 12 do count
+
+// Se tiver apenas uma instrução é possivel retirar as chaves "{ }" em todos: while, do while e for
+// while e do while - trabalha com condições (passar por varios componentes) | for - utilizado pra contagem
+
+        for (int i=0 ; i < 10; i++) { // Variavel local tem que ser iniciada
+            System.out.println("For "+i);
         }
     }
 }
+
+// Ctrl [+] F2 -> Para o programa
